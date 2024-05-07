@@ -1,5 +1,5 @@
 # SwinGPT_KB_CT
-Implementation of SwinGPT for pixel-to-embedding (pix2emb) conversion, developed for the KakaoBrain coding test by Sangwon Baek.
+Implementation of SwinGPT for pixel-to-embedding (pix2emb) conversion
 
 ## Table of Contents
 - [Introduction](#introduction)
@@ -15,7 +15,6 @@ Implementation of SwinGPT for pixel-to-embedding (pix2emb) conversion, developed
 - [Usages](#usages)
   - [Image Captioning](#image-captioning)
   - [Object Detection](#object-detection)
-- [Credits](#credits)
 
 ## Introduction
 SwinGPT_KB_CT utilizes the Swin Transformer architecture integrated with GPT to perform advanced pixel-to-embedding transformations. This model is specifically designed to enhance image understanding and feature extraction capabilities in neural networks.
@@ -142,14 +141,9 @@ Examples of object detection outputs:
 ![OD_output_1](swingpt/demo/examples/OD_output_1.png)
 ![OD_output_2](swingpt/demo/examples/OD_output_2.png)
 
-## Credits
-- **SwinGPT_KB_CT was developed by Sangwon Baek as part of the KakaoBrain coding test.** 
-- **Special thanks to KakaoBrain for providing abundant resources for exploration!**
-
 ### Explanation
 - **Introduction**: Briefly describes the purpose and functionality of the project.
 - **Installation**: Lists system requirements and installation steps for necessary libraries.
 - **Configuration**: Details how to configure the system and Git settings for project setup.
 - **Training**: Divided into sub-sections for different GPU configurations, providing clear, executable commands for each scenario.
 - **Usage**: This section can include basic commands to run the project or how to use the trained model.
-- **Credits**: Acknowledges the contributions and context of the project development.
