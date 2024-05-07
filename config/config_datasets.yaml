@@ -1,0 +1,105 @@
+main:
+  name: Configurations for constructing dataset to process SwinGPT
+  # Flag for data processing of individual files
+  create_data: false
+
+  datasets:
+    # Directories
+    data_dir: /data/datasets_802/
+    processed_dir: /data/cad-recruit-02_814/swbaek/data_processed/
+
+    train_MSCOCO:  
+      - instances_train2014_caption.json
+      - instances_train2014_detect.json
+      - instances_train2017_caption.json
+      - instances_train2017_detect.json
+      - coco_train2014_combined.json    
+      - coco_train2017_combined.json
+    
+    train_refCOCO:
+      - refcoco_train_caption.json
+      - refcoco+_train_caption.json
+      - refcocog_train_caption.json
+      - refcoco_val_caption.json
+      - refcoco+_val_caption.json
+      - refcocog_val_caption.json
+      - refcoco_train_detect.json
+      - refcoco+_train_detect.json
+      - refcocog_train_detect.json
+
+    train_VG:
+      - vg_caption.json
+      - vg_detect.json
+
+    train_LVIS:
+      - lvis_train_v0.5_combined.json
+      - lvis_train_v1_combined.json
+      - lvis_val_v0.5_combined.json
+      - lvis_val_v1_combined.json
+
+    train_all:
+      - coco_train2014_combined.json    
+      - coco_train2017_combined.json
+      - instances_train2014_caption.json
+      - instances_train2017_caption.json
+      - instances_train2014_detect.json
+      - instances_train2017_detect.json
+      - instances_val2014_detect.json
+      - instances_val2017_detect.json
+      - instances_val2014_caption.json
+      - instances_val2017_caption.json
+      - refcoco_train_caption.json
+      - refcoco+_train_caption.json
+      - refcocog_train_caption.json
+      - refcoco_train_detect.json
+      - refcoco+_train_detect.json
+      - refcocog_train_detect.json
+      - vg_caption.json
+      - vg_detect.json
+      - lvis_train_v0.5_combined.json
+      - lvis_train_v1_combined.json
+      - lvis_val_v0.5_combined.json
+      - lvis_val_v1_combined.json
+
+    train_detect: 
+        - coco_train2014_combined.json    
+        - coco_train2017_combined.json
+        - instances_train2014_detect.json
+        - instances_train2017_detect.json
+        - instances_val2014_detect.json
+        - instances_val2017_detect.json
+        - refcoco_train_detect.json
+        - refcoco+_train_detect.json
+        - refcocog_train_detect.json
+        - vg_detect.json
+
+    # MS-COCO Caption validation split
+    val_IC:
+      - coco_train2014_combined.json    
+      - coco_train2017_combined.json
+
+    # RefCOCO validation split
+    val_OD:
+      - refcoco_val_detect.json
+      - refcoco+_val_detect.json
+      - refcocog_val_detect.json
+      - refcoco_val_caption.json
+      - refcoco+_val_caption.json
+      - refcocog_val_caption.json
+
+    val_all:
+      - coco_train2014_combined.json    
+      - coco_train2017_combined.json
+      - instances_val2014_detect.json
+      - instances_val2017_detect.json
+      - instances_val2014_caption.json
+      - instances_val2017_caption.json
+      - refcoco_val_detect.json
+      - refcoco+_val_detect.json
+      - refcocog_val_detect.json
+      - refcoco_val_caption.json
+      - refcoco+_val_caption.json
+      - refcocog_val_caption.json
+      - coco_val2014_combined.json
+      - coco_val2017_combined.json
+
